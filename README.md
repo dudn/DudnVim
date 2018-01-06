@@ -1,3 +1,3 @@
 # DudnVim
-git clone https://github.com/dudn/DudnVim.git ~/ \
-sh ~/DudnVim/install.sh
+git clone https://github.com/dudn/DudnVim.git ~/.DudnVim \
+sh ~/.DudnVim/install.sh
