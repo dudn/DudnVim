@@ -23,7 +23,6 @@ info() {
 
 error() {
     msg "${Red}[✘]${Color_off} ${1}${2}"
-    exit 1
 }
 
 need_cmd () {
