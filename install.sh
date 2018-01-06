@@ -36,14 +36,18 @@ need_cmd () {
 }
 
 back_up () {
-    if [ -f "$HOME/.vimrc" ]&&[ ! -h "$HOME/.vimrc"]; then
+    if [ -f "$HOME/.vimrc" ]&&[ ! -h "$HOME/.vimrc" ]; then
         mv "$HOME/.vimrc" "$HOME/.vimrc_back"
         success "Backup $HOME/.vimrc to $HOME/.vimrc_back"
+    elif [ -h "$HOME/.vimrc" ]; then
+        rm "$HOME/.vimrc"
     fi
 
     if [ -f "$HOME/.ideavimrc" ]&&[ ! -h "$HOME/.ideavimrc" ]; then
         mv "$HOME/.ideavimrc" "$HOME/.ideavimrc_back"
         success "Backup $HOME/.ideavimrc to $HOME/.ideavimrc_back"
+    elif [ -h "$HOME/.ideavimrc" ]; then
+        rm "$HOME/.ideavimrc"
     fi
 }
 
@@ -53,7 +57,7 @@ check_cmds () {
 }
 
 install_plugin_manager () {
-    if [[ ! -f "$HOME/.vim/autoload/plug.vim" ]]; then
+    if [ ! -f "$HOME/.vim/autoload/plug.vim" ]; then
         info "Install plug.vim"
 	curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
         success "plug.vim installation done"
