@@ -69,7 +69,7 @@ install_vim () {
 installer () {
     back_up
     check_cmds
-    install_package_manager
+    install_plugin_manager
     install_vim
     vim -c PlugInstall
 }
