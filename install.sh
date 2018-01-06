@@ -73,3 +73,5 @@ installer () {
     install_vim
     vim -c PlugInstall
 }
+
+installer
