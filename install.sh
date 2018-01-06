@@ -28,7 +28,7 @@ error() {
 need_cmd () {
     if ! hash "$1" &>/dev/null; then
         error "Need '$1' (command not fount)"
-	sudo apt install '$1'
+	sudo apt install $1
 	info "Install '$1' for you"
     fi
 }
