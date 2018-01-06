@@ -30,16 +30,18 @@ need_cmd () {
         error "Need '$1' (command not fount)"
 	sudo apt install $1
 	info "Install '$1' for you"
+    else
+        info "Checked '$1'"
     fi
 }
 
 back_up () {
-    if [[ -f "$HOME/.vimrc" ]]; then
+    if [ -f "$HOME/.vimrc" ]&&[ ! -h "$HOME/.vimrc"]; then
         mv "$HOME/.vimrc" "$HOME/.vimrc_back"
         success "Backup $HOME/.vimrc to $HOME/.vimrc_back"
     fi
 
-    if [[ -f "$HOME/.ideavimrc" ]]; then
+    if [ -f "$HOME/.ideavimrc" ]&&[ ! -h "$HOME/.ideavimrc" ]; then
         mv "$HOME/.ideavimrc" "$HOME/.ideavimrc_back"
         success "Backup $HOME/.ideavimrc to $HOME/.ideavimrc_back"
     fi
