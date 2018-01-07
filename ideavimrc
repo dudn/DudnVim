@@ -1,13 +1,15 @@
+" Plugins in IDEA
+" AceJump
 set ignorecase
 set smartcase
 set incsearch
+set surround
+
+set clipboard=unnamedplus,unnamed
 
 let mapleader=" "
 inoremap we <Esc>
 vnoremap we <Esc>
-
-cnoremap <c-j> <down>
-cnoremap <c-k> <up>
 
 nnoremap <leader>w :w!<cr>
 nnoremap <Leader>q :qa<cr>
@@ -15,10 +17,6 @@ nnoremap <Leader>q :qa<cr>
 nnoremap <silent> zj o<Esc>k
 nnoremap <silent> zk O<Esc>j
 
-nnoremap ; :
-nnoremap : ;
-vnoremap ; :
-vnoremap : ;
 vnoremap < <gv
 vnoremap > >gv
 nnoremap j gj
@@ -29,3 +27,14 @@ noremap <leader>h <c-w>h
 noremap <leader>l <c-w>l
 noremap <leader>k <c-w>k
 noremap <leader>j <c-w>j
+
+nnoremap s :action AceAction<cr>
+
+nmap <leader>g :action GotoDeclaration<cr>
+nmap <leader>b :action Back<cr>
+nmap <leader>f :action Forward<cr>
+
+nmap <leader>f :action GotoFile<cr>
+nmap <leader>c :action GotoClass<cr>
+nmap <leader>fs :action FileStructurePopup<cr>
+nmap <leader>d :action ShowErrorDescription<cr>

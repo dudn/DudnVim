@@ -32,7 +32,6 @@ apt_install () {
 
 install_apts () {
     apt_install 'fcitx-googlepinyin'
-    apt_install 'silversearcher-ag'
     apt_install 'exuberant-ctags'
 }
 
