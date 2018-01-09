@@ -67,6 +67,7 @@ install_plugin_manager () {
 install_vim () {
     ln -s "$HOME/.DudnVim/vimrc" "$HOME/.vimrc"
     ln -s "$HOME/.DudnVim/ideavimrc" "$HOME/.ideavimrc"
+    ln -s "$HOME/.DudnVim/tern-config" "$HOME/.tern-config"
     success "Installed DudnVim"
 }
 
