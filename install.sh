@@ -54,6 +54,9 @@ back_up () {
 check_cmds () {
     need_cmd 'vim'
     need_cmd 'curl'
+    need_cmd 'npm'
+    need_cmd 'nodejs'
+    apt_install 'cmake'
 }
 
 install_plugin_manager () {
@@ -65,6 +68,7 @@ install_plugin_manager () {
 }
 
 install_vim () {
+    sudo ln -s "/usr/bin/nodejs" "/usr/bin/node"
     ln -s "$HOME/.DudnVim/vimrc" "$HOME/.vimrc"
     ln -s "$HOME/.DudnVim/ideavimrc" "$HOME/.ideavimrc"
     ln -s "$HOME/.DudnVim/tern-config" "$HOME/.tern-config"

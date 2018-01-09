@@ -32,11 +32,8 @@ apt_install () {
 
 install_apts () {
     apt_install 'fcitx-googlepinyin'
-    apt_install 'cmake'
     apt_install 'exuberant-ctags'
     apt_install 'ksnapshot'
-    apt_install 'nodejs'
-    apt_install 'npm'
 }
 
 install_apts
