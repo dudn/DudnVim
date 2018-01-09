@@ -101,6 +101,8 @@ noremap <leader>l <c-w>l
 noremap <leader>k <c-w>k
 noremap <leader>j <c-w>j
 
+" FUNCTIONS
+
 " tagbar
 noremap <F8> :TagbarToggle<CR>
 " <Space> conflict with <leader>,cancel it
