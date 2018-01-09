@@ -12,7 +12,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'majutsushi/tagbar' " o <Enter>
 Plug 'anyakichi/vim-surround' " ds cs ysw ysiw
 Plug 'tpope/vim-repeat' " . for vim-surround
-Plug 'Lokaltog/vim-easymotion' " 's'
+Plug 'Lokaltog/vim-easymotion' " 's' or <leader><leader>j/k
 Plug 'terryma/vim-multiple-cursors' " <C-x><C-p><C-n>
 Plug 'tpope/vim-commentary' " gcc gc
 Plug 'mattn/emmet-vim' "for quick generate html tree
@@ -20,9 +20,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'SirVer/ultisnips' " <leader><tab>
 Plug 'honza/vim-snippets'
 
-Plug 'Chiel92/vim-autoformat'
-" Plug 'vim-syntastic/syntastic'
 Plug 'w0rp/ale'
+Plug 'Chiel92/vim-autoformat'
 Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
@@ -131,15 +130,6 @@ let g:ctrlp_custom_ignore = {
             \ 'file': '\v\.(exe|so|dll)$',
             \ 'link': 'some_bad_symbolic_links',
             \ }
-
-" syntastic
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 1
-" let g:syntastic_error_symbol = "x"
-" let g:syntastic_warning_symbol = "!"
-" let g:syntastic_html_checkers=['htmlhint', 'csslint', 'jshint']
-" let g:syntastic_css_checkers = ['csslint']
-" let g:syntastic_javascript_checkers = ['jshint']
 
 let g:ale_linters = {
 \   'html':['htmlhint', 'csslint', 'jshint'],
