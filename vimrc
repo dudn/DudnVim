@@ -61,6 +61,7 @@ set tags=./tags;/
 set pastetoggle=<F7>
 set whichwrap+=<,>,h,l
 set viminfo='20,\"500
+au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
 " set textwidth=80
 set incsearch
 if has('unnamedplus')
@@ -130,10 +131,10 @@ let g:ctrlp_custom_ignore = {
             \ }
 
 let g:ale_linters = {
-\   'html':['htmlhint', 'csslint', 'jshint'],
-\   'javascript': ['jshint'],
-\   'css':['csslint'],
-\}
+            \   'html':['htmlhint', 'csslint', 'jshint'],
+            \   'javascript': ['jshint'],
+            \   'css':['csslint'],
+            \}
 
 " autofomat invoke outside tools #js-beautify(css-beautify) html-beautify astyle
 noremap <F3> :Autoformat<CR>

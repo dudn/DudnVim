@@ -70,6 +70,7 @@ install_plugin_manager () {
 
 install_vim () {
     sudo ln -s "/usr/bin/nodejs" "/usr/bin/node"
+    sudo ln -s /usr/local/share/vim /usr/share/vim
     ln -s "$HOME/.DudnVim/vimrc" "$HOME/.vimrc"
     ln -s "$HOME/.DudnVim/ideavimrc" "$HOME/.ideavimrc"
     # ln -s "$HOME/.DudnVim/tern-config" "$HOME/.tern-config"
@@ -78,6 +79,7 @@ install_vim () {
 
 
 installer () {
+    mkdir ~/tmp
     back_up
     check_cmds
     install_plugin_manager
