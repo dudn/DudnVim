@@ -99,5 +99,5 @@ install_tools () {
     apt_install 'browser-sync'
 }
 
-installer
 install_tools
+installer
