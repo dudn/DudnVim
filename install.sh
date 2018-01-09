@@ -56,7 +56,8 @@ check_cmds () {
     need_cmd 'curl'
     need_cmd 'npm'
     need_cmd 'nodejs'
-    apt_install 'cmake'
+    need_cmd 'cmake'
+
 }
 
 install_plugin_manager () {
@@ -84,4 +85,19 @@ installer () {
     vim -c PlugInstall
 }
 
+
+install_tool () {
+    sudo apt install $1
+    info "Install '$1' for you"
+}
+
+
+install_tools () {
+    apt_install 'fcitx-googlepinyin'
+    apt_install 'exuberant-ctags'
+    apt_install 'ksnapshot'
+    apt_install 'browser-sync'
+}
+
 installer
+install_tools
