@@ -1,14 +1,14 @@
 call plug#begin('~/.vim/plugged')
 Plug 'morhetz/gruvbox'
-Plug 'vim-airline/vim-airline'
+Plug 'majutsushi/tagbar'
 Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
-Plug 'Valloric/vim-operator-highlight'
+Plug 'vim-airline/vim-airline'
 Plug 'vim-scripts/vim-auto-save'
+Plug 'Valloric/vim-operator-highlight'
 Plug 'rking/ag.vim', { 'do': 'sudo apt install silversearcher-ag' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
-Plug 'majutsushi/tagbar' " o <Enter>
 Plug 'anyakichi/vim-surround' " ds cs ysw ysiw
 Plug 'tpope/vim-repeat' " . for vim-surround
 Plug 'Lokaltog/vim-easymotion' " 's' or <leader><leader>j/k
