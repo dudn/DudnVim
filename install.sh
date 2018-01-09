@@ -100,6 +100,8 @@ install_tools () {
     apt_install 'ksnapshot'
     apt_install 'astyle'
     apt_install 'browser-sync'
+    apt_install 'openjdk-8-jdk'
+    apt_install 'openjdk-8-source'
 }
 
 install_tools

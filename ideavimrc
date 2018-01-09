@@ -17,20 +17,12 @@ nnoremap <Leader>q :qa<cr>
 nnoremap <silent> zj o<Esc>k
 nnoremap <silent> zk O<Esc>j
 
+nnoremap V <C-v>
+
 vnoremap < <gv
 vnoremap > >gv
 nnoremap j gj
 nnoremap k gk
-inoremap <C-h> <Left>
-nnoremap <C-h> <Left>
-inoremap <C-j> <Down>
-nnoremap <C-j> <Down>
-inoremap <C-k> <Up>
-nnoremap <C-k> <Up>
-inoremap <C-l> <Right>
-nnoremap <C-l> <Right>
-nnoremap <a-j> 15gj
-nnoremap <a-k> 15gk
 noremap <leader>h <c-w>h
 noremap <leader>l <c-w>l
 noremap <leader>k <c-w>k

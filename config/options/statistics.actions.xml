@@ -1,0 +1,13 @@
+<application>
+  <component name="ActionsCollector">
+    <counts>
+      <entry action="ActivateProjectToolWindow" count="3" />
+      <entry action="EditorBackSpace" count="4" />
+      <entry action="EditorChooseLookupItemReplace" count="5" />
+      <entry action="EditorTab" count="1" />
+      <entry action="ExpandLiveTemplateByTab" count="4" />
+      <entry action="NewHtmlFile" count="1" />
+      <entry action="ShowSettings" count="2" />
+    </counts>
+  </component>
+</application>
