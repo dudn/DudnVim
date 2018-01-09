@@ -72,7 +72,7 @@ install_vim () {
     sudo ln -s "/usr/bin/nodejs" "/usr/bin/node"
     ln -s "$HOME/.DudnVim/vimrc" "$HOME/.vimrc"
     ln -s "$HOME/.DudnVim/ideavimrc" "$HOME/.ideavimrc"
-    ln -s "$HOME/.DudnVim/tern-config" "$HOME/.tern-config"
+    # ln -s "$HOME/.DudnVim/tern-config" "$HOME/.tern-config"
     success "Installed DudnVim"
 }
 
@@ -96,6 +96,7 @@ install_tools () {
     apt_install 'fcitx-googlepinyin'
     apt_install 'exuberant-ctags'
     apt_install 'ksnapshot'
+    apt_install 'astyle'
     apt_install 'browser-sync'
 }
 

@@ -5,7 +5,6 @@ Plug 'Raimondi/delimitMate'
 Plug 'Valloric/MatchTagAlways'
 Plug 'Valloric/vim-operator-highlight'
 Plug 'vim-scripts/vim-auto-save'
-Plug 'gorodinskiy/vim-coloresque'
 Plug 'rking/ag.vim', { 'do': 'sudo apt install silversearcher-ag' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
@@ -17,12 +16,9 @@ Plug 'terryma/vim-multiple-cursors' " <C-x><C-p><C-n>
 Plug 'tpope/vim-commentary' " gcc gc
 Plug 'mattn/emmet-vim' "for quick generate html tree
 Plug 'kien/ctrlp.vim'
-Plug 'SirVer/ultisnips' " <leader><tab>
-Plug 'honza/vim-snippets'
 
 Plug 'w0rp/ale'
 Plug 'Chiel92/vim-autoformat'
-Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 filetype plugin indent on
@@ -137,24 +133,8 @@ let g:ale_linters = {
 \   'css':['csslint'],
 \}
 
-" autofomat
+" autofomat invoke outside tools #js-beautify(css-beautify) html-beautify astyle
 noremap <F3> :Autoformat<CR>
-
-" ycm
-let g:ycm_key_invoke_completion = '<C-Space>'
-let g:ycm_semantic_triggers =  {
-            \   'cs,java,javascript,typescript,d,python,perl6,scala,vb,elixir,go' : ['.'],
-            \ }
-let g:ycm_cache_omnifunc = 0
-let g:ycm_seed_identifiers_with_syntax= 1
-let g:ycm_complete_in_comments = 1
-let g:ycm_complete_in_strings = 1
-let g:ycm_collect_identifiers_from_comments_and_strings = 0
-nnoremap <leader>gd :YcmCompleter GoToDefinitionElseDeclaration<CR>
-
-" snippets
-let g:UltiSnipsExpandTrigger = '<leader><Tab>'
-let g:UltiSnipsJumpForwardTrigger = '<leader><Tab>'
 
 " autosave
 let g:auto_save = 1
@@ -162,3 +142,5 @@ let g:auto_save_no_updatetime = 1
 let g:auto_save_in_insert_mode = 0
 let g:auto_save_silent = 1
 
+" ale
+let g:ale_sign_column_always = 1
