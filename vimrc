@@ -82,7 +82,8 @@ cnoremap w!! w !sudo tee % >/dev/null
 cnoremap <c-j> <down>
 cnoremap <c-k> <up>
 
-nnoremap <Leader>q :wqa<cr>
+nnoremap <Leader>q :wq<cr>
+nnoremap <leader>w :w<cr>
 
 nnoremap <silent> zj o<Esc>k
 nnoremap <silent> zk O<Esc>j
