@@ -18,7 +18,8 @@ nnoremap <Leader>q :wq<cr>
 nnoremap <silent> zj o<Esc>k
 nnoremap <silent> zk O<Esc>j
 
-nnoremap V <C-v>
+nnoremap H 0
+nnoremap L $
 
 vnoremap < <gv
 vnoremap > >gv
@@ -47,5 +48,3 @@ nnoremap <leader>gf :action GotoFile<cr>
 
 
 nnoremap gcc :action CommentByLineComment<cr>
-vnoremap gc  :action CommentByLineComment<cr>
-
