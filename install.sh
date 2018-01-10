@@ -95,13 +95,13 @@ install_tool () {
 
 
 install_tools () {
-    apt_install 'fcitx-googlepinyin'
-    apt_install 'exuberant-ctags'
-    apt_install 'ksnapshot'
-    apt_install 'astyle'
-    apt_install 'browser-sync'
-    apt_install 'openjdk-8-jdk'
-    apt_install 'openjdk-8-source'
+    install_tool 'fcitx-googlepinyin'
+    install_tool 'exuberant-ctags'
+    install_tool 'ksnapshot'
+    install_tool 'astyle'
+    install_tool 'browser-sync'
+    install_tool 'openjdk-8-jdk'
+    install_tool 'openjdk-8-source'
 }
 
 install_tools
