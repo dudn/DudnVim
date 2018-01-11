@@ -7,7 +7,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-scripts/vim-auto-save'
 Plug 'Valloric/vim-operator-highlight'
 Plug 'rking/ag.vim', { 'do': 'sudo apt install silversearcher-ag' }
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 
 Plug 'anyakichi/vim-surround' " ds cs ysw ysiw
 Plug 'tpope/vim-repeat' " . for vim-surround
