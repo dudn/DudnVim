@@ -20,11 +20,18 @@ nnoremap <silent> zk O<Esc>j
 
 nnoremap H 0
 nnoremap L $
+vnoremap H 0
+vnoremap L $
 
-vnoremap < <gv
-vnoremap > >gv
+nnoremap <c-j> 15gj
+nnoremap <c-k> 15gk
+vnoremap <c-j> 15gj
+vnoremap <c-k> 15gk
+
 nnoremap j gj
 nnoremap k gk
+
+vnoremap < <gv
 nnoremap ; :
 nnoremap : ;
 vnoremap ; :
@@ -45,6 +52,5 @@ nnoremap <leader>t :action ActivateTerminalToolWindow<cr>
 
 nnoremap <leader>gd :action GotoDeclaration<cr>
 nnoremap <leader>gf :action GotoFile<cr>
-
 
 nnoremap gcc :action CommentByLineComment<cr>
