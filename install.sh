@@ -52,7 +52,6 @@ back_up () {
 }
 
 check_cmds () {
-    need_cmd 'vim'
     need_cmd 'curl'
     need_cmd 'npm'
     need_cmd 'nodejs'
@@ -89,7 +88,7 @@ installer () {
 
 
 install_tool () {
-    sudo apt install $1
+    sudo apt install $1 --assume-yes
     info "Install '$1' for you"
 }
 
