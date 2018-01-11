@@ -149,4 +149,4 @@ let g:auto_save_in_insert_mode = 0
 let g:auto_save_silent = 1
 
 " ale
-let g:ale_sign_column_always = 1
+" let g:ale_sign_column_always = 1
