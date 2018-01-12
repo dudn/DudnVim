@@ -43,12 +43,12 @@ back_up () {
         rm "$HOME/.vimrc"
     fi
 
-    if [ -f "$HOME/.ideavimrc" ]&&[ ! -h "$HOME/.ideavimrc" ]; then
-        mv "$HOME/.ideavimrc" "$HOME/.ideavimrc_back"
-        success "Backup $HOME/.ideavimrc to $HOME/.ideavimrc_back"
-    elif [ -h "$HOME/.ideavimrc" ]; then
-        rm "$HOME/.ideavimrc"
-    fi
+    # if [ -f "$HOME/.ideavimrc" ]&&[ ! -h "$HOME/.ideavimrc" ]; then
+    #     mv "$HOME/.ideavimrc" "$HOME/.ideavimrc_back"
+    #     success "Backup $HOME/.ideavimrc to $HOME/.ideavimrc_back"
+    # elif [ -h "$HOME/.ideavimrc" ]; then
+    #     rm "$HOME/.ideavimrc"
+    # fi
 }
 
 check_cmds () {
@@ -71,7 +71,7 @@ install_vim () {
     sudo ln -s "/usr/bin/nodejs" "/usr/bin/node"
     sudo ln -s /usr/local/share/vim /usr/share/vim
     ln -s "$HOME/.DudnVim/vimrc" "$HOME/.vimrc"
-    ln -s "$HOME/.DudnVim/ideavimrc" "$HOME/.ideavimrc"
+    # ln -s "$HOME/.DudnVim/ideavimrc" "$HOME/.ideavimrc"
     # ln -s "$HOME/.DudnVim/tern-config" "$HOME/.tern-config"
     success "Installed DudnVim"
 }
