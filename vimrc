@@ -97,10 +97,6 @@ nnoremap j gj
 nnoremap k gk
 nnoremap <c-j> 15gj
 nnoremap <c-k> 15gk
-nnoremap H 0
-nnoremap L $
-vnoremap H 0
-vnoremap L $
 noremap <leader>h <c-w>h
 noremap <leader>l <c-w>l
 noremap <leader>k <c-w>k

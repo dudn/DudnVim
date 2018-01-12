@@ -19,11 +19,6 @@ nnoremap <Leader>q :wq<cr>
 nnoremap <silent> zj o<Esc>k
 nnoremap <silent> zk O<Esc>j
 
-nnoremap H 0
-nnoremap L $
-vnoremap H 0
-vnoremap L $
-
 nnoremap <c-j> 15gj
 nnoremap <c-k> 15gk
 vnoremap <c-j> 15gj
