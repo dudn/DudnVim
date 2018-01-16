@@ -101,7 +101,7 @@ install_tools () {
     install_tool 'browser-sync'
     install_tool 'openjdk-8-jdk'
     install_tool 'openjdk-8-source'
-    git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf ; ~/.fzf/install --all
+    # git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf ; ~/.fzf/install --all
 }
 
 install_tools
