@@ -28,7 +28,7 @@ error() {
 need_cmd () {
     if ! hash "$1" &>/dev/null; then
         error "Need '$1' (command not fount)"
-	sudo apt install $1 --assume=yes
+	sudo apt install $1 --assume-yes
 	info "Install '$1' for you"
     else
         info "Checked '$1'"
